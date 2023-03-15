@@ -21,7 +21,7 @@ fun main() {
             val xNew = x + dx
             val yNew = y + dy
             val letter = rectangle.getOrNull(yNew)?.getOrNull(xNew) ?: continue
-            search(xNew, yNew, word + letter) // :-(
+            search(xNew, yNew, word + letter)
         }
     }
     for (y in rectangle.indices) for (x in rectangle[0].indices){
